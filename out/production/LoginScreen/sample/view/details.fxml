@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #ab47bc;"
+            xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.DetailsController">
+   <children>
+      <Label fx:id="detailsWelcomeLabel" alignment="CENTER" layoutX="559.0"
+             layoutY="14.0" prefHeight="20.0" prefWidth="127.0" text="Welcome..." textAlignment="CENTER" textFill="#e1e1e1">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="12.0" layoutY="70.0" prefHeight="135.0" prefWidth="676.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="143.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/mypicture.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="detailsName" layoutX="168.0" layoutY="24.0" prefHeight="17.0" prefWidth="307.0" text="Name:" />
+            <Label fx:id="detailsAge" layoutX="168.0" layoutY="55.0" text="Age:" />
+            <Label fx:id="detailsProfession" layoutX="168.0" layoutY="85.0" prefHeight="17.0" prefWidth="283.0" text="Profession:" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="158.0" layoutY="224.0" prefHeight="135.0" prefWidth="530.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <AnchorPane prefHeight="51.0" prefWidth="530.0" style="-fx-background-color: #790e8b;">
+               <children>
+                  <Label alignment="CENTER" layoutX="192.0" layoutY="12.0" prefHeight="27.0" prefWidth="147.0" text="How to Find Me" textFill="#e1e1e1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="180.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-geography-40.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="25.0" layoutX="182.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-secured-letter-24.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="detailsWeb" layoutX="205.0" layoutY="59.0" prefHeight="23.0" prefWidth="147.0" text="Kennesawwrecker.com" underline="true" />
+            <Hyperlink fx:id="detailsEmail" layoutX="203.0" layoutY="90.0" text="Stangil44@Gmail.com" underline="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
